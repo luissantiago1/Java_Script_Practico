@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    padding-top: 100px;
+    justify-content: center;
+}
+
+section .cont-botones{
+    width: 40%;
+    height: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 5px 5px rgba(17, 183, 138, 0.25);
+    margin-right: 40px;
+}
+
+section .cont-botones h2{
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 40px; 
+
+}
+
+section .cont-botones button{
+    padding: 10px 40px;
+    border-radius: 10px;
+    color: #fff;
+    background: #8609B6;
+    margin: 12px;
+    box-shadow: 5px 5px 3px rgba(17, 183, 138, 0.25);
+}
+
+section .cont-figura{
+    width: 40%;
+    height: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 5px 5px rgba(17, 183, 138, 0.25);
+}
+
+section .cont-figura h2{
+    color: #fff;
+    font-size: 50px;
+}
+
+#figura{
+    width: 200px;
+    height: 200px;
+    background: #8609B6;
+    margin: 20px auto;
+    box-shadow: 5px 5px 3px rgba(17, 183, 138, 0.25);
+    transition: .5s;
+}
+#figura.cuadrado{
+    width: 200px;
+    height: 200px;
+    background: #8609B6;
+    margin: 20px auto;
+    box-shadow: 5px 5px 3px rgba(17, 183, 138, 0.25);;
+}
+
+#figura.circulo{
+    border-radius: 50%;
+    transition: .5s;
+    transform: rotate(-360deg);
+}
+
+#figura.rectangulo{
+    width: 300px; 
+    transition: .4s;
+}
+
+#figura.moveTop{
+    transform: translateY(-100px);
+    transition: .5s;
+}
+
+#figura.left{
+    transform: translateX(-100px);
+    transition: .5s;
+}
+
+#figura.right{
+    transform: translateX(100px);
+    transition: .5s;
+}
+
+#figura.bottom{
+    transform: translateY(100px);
+    transition: .5s;
+}
+
+#figura.diagonal{
+    transform: translate(100px, -100px);
+    transition: .5s;
+}
+
+#figura.imagen{
+    background-image: url(../img/gato.gif);
+    background-size: 100%;
+}
+
+#figura.rombo{
+    width: 200px;
+    height: 200px;
+    transform: skew(20deg);
+}
